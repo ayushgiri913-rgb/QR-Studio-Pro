@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ===== BASIC SETUP ===== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Free QR Code Generator with Logo & Custom Design | QR Studio</title>
+  <meta name="description" content="QR Studio is a free unlimited QR code generator and scanner. Create QR codes for URL, UPI, WiFi, WhatsApp, Email, Phone, SMS, Contact, Location and more. No signup required.">
+  <meta name="keywords" content="free qr code generator, upi qr code generator, wifi qr generator, whatsapp qr code, unlimited qr maker online, qr code scanner">
+  <meta name="author" content="QR Studio">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0f0c29">
+  <link rel="canonical" href="https://yourdomain.com">
+  
+  <!-- ===== Open Graph ===== -->
+  <meta property="og:title" content="QR Studio - Free QR Code Generator & Scanner">
+  <meta property="og:description" content="Generate unlimited customizable QR codes instantly. No signup required.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com">
+  
+  <!-- ===== CSS FILES ===== -->
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  
+  <!-- ===== SCHEMA ===== -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "QR Studio",
+      "url": "https://yourdomain.com",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "All",
+      "description": "Free unlimited QR code generator and scanner without signup."
+    }
+  </script>
+  
+</head>
+
+<body>
+  
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <div class="logo">QR Studio</div>
+      <nav class="nav-links">
+        <a href="#generator">Generator</a>
+        <a href="#features">Features</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Free Unlimited QR Code Generator & Scanner</h1>
+      <p>Create professional QR codes instantly. No signup. No limits. 100% free.</p>
+      <a href="#generator" class="btn-primary">Start Generating</a>
+    </div>
+  </section>
+  
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    
+    <!-- ===== GENERATOR SECTION ===== -->
+    <section id="generator" class="section generator-section">
+      <div class="container">
+        <h2>Generate Your QR Code</h2>
+        
+        <div class="generator-card">
+          
+          <!-- QR TYPE SELECT -->
+          <div class="form-group">
+            <label for="qrType">Select QR Type</label>
+            <select id="qrType" aria-label="QR Type Selection">
+              <option value="text">Text / URL</option>
+              <option value="email">Email</option>
+              <option value="phone">Phone</option>
+              <option value="sms">SMS</option>
+              <option value="whatsapp">WhatsApp</option>
+              <option value="upi">UPI Payment</option>
+              <option value="wifi">WiFi</option>
+              <option value="vcard">Contact (vCard)</option>
+              <option value="event">Event</option>
+              <option value="location">Location</option>
+            </select>
+          </div>
+          
+          <!-- DYNAMIC INPUTS WILL LOAD HERE -->
+          <div id="dynamicFields"></div>
+          
+          <!-- ===== QR CUSTOMIZATION PANEL ===== -->
+          <div class="customization-panel">
+            <h3>Customize Your QR Code</h3>
+            
+            <!-- Dot Style -->
+            <div class="custom-group">
+              <label for="dotStyle">Dot Style</label>
+              <select id="dotStyle">
+                <option value="square">Square</option>
+                <option value="dots">Dots</option>
+                <option value="rounded">Rounded</option>
+                <option value="classy">Classy</option>
+                <option value="extra-rounded">Extra Rounded</option>
+              </select>
+            </div>
+            
+            <!-- QR Color -->
+            <div class="custom-group">
+              <label for="qrColor">QR Color</label>
+              <input type="color" id="qrColor" value="#000000">
+            </div>
+            
+            <!-- Background Color -->
+            <div class="custom-group">
+              <label for="bgColor">Background Color</label>
+              <input type="color" id="bgColor" value="#ffffff">
+            </div>
+            
+            <!-- QR Size -->
+            <div class="custom-group">
+              <label for="qrSize">QR Size</label>
+              <input type="range" id="qrSize" min="150" max="400" value="250">
+              <span id="sizeValue">250px</span>
+            </div>
+            
+            <!-- Center Logo -->
+            <div class="custom-group">
+              <label for="logoUpload">Center Logo</label>
+              <input type="file" id="logoUpload" accept="image/*">
+            </div>
+            
+            <!-- Frame Text -->
+            <div class="custom-group">
+              <label for="frameText">Bottom Text (Optional)</label>
+              <input type="text" id="frameText" placeholder="Scan Me / Pay Now / Visit Site">
+            </div>
+            
+            <!-- Frame Color -->
+            <div class="custom-group">
+              <label for="frameColor">Frame Color</label>
+              <input type="color" id="frameColor" value="#302b63">
+            </div>
+            
+            <!-- Gradient Toggle -->
+            <div class="custom-group">
+              <label>
+                <input type="checkbox" id="gradientToggle">
+                Enable Gradient Frame
+              </label>
+            </div>
+            
+            <!-- Glow Toggle -->
+            <div class="custom-group">
+              <label>
+                <input type="checkbox" id="glowToggle">
+                Enable Glow Effect
+              </label>
+            </div>
+            
+            <!-- Frame Border Radius -->
+            <div class="custom-group">
+              <label for="radiusRange">Frame Radius</label>
+              <input type="range" id="radiusRange" min="0" max="40" value="20">
+            </div>
+          </div>
+          
+          <!-- ACTION BUTTONS -->
+          <div class="button-group">
+            <button id="generateBtn" class="btn-primary">Generate QR</button>
+            <button id="downloadBtn" class="btn-secondary">Download</button>
+            <button id="clearBtn" class="btn-danger">Clear</button>
+          </div>
+          
+          <!-- QR OUTPUT -->
+          <div class="qr-output-wrapper">
+            <div id="qrPreview">
+              <p>Your QR code will appear here</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    
+    <!-- ===== FEATURES SECTION ===== -->
+    <section id="features" class="section">
+      <div class="container">
+        <h2>Why Choose QR Studio?</h2>
+        <div class="feature-grid">
+          
+          <div class="feature-card">
+            <h3>Instant QR Code Generation</h3>
+            <p>Create QR codes instantly with smooth and fast performance.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>Unlimited QR Creation</h3>
+            <p>Generate unlimited QR codes without any restrictions.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>Fully Customizable Design</h3>
+            <p>Change colors, background, and styles to match your brand.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>Logo Integration</h3>
+            <p>Add your logo inside the QR code while maintaining scan quality.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>High Quality Download</h3>
+            <p>Download QR codes in high resolution for print and digital use.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>One Click Download</h3>
+            <p>Download your QR code instantly with a single click.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>Mobile Friendly Interface</h3>
+            <p>Works perfectly on Android, iOS, tablets, and desktops.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>Fast Lightweight Engine</h3>
+            <p>Optimized code ensures quick generation without lag.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>Secure Processing</h3>
+            <p>All QR codes are generated securely inside your browser.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>No Data Storage</h3>
+            <p>Your information is never stored on our servers.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>Cross Platform Support</h3>
+            <p>Compatible with all major devices and operating systems.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>UPI QR Generator</h3>
+            <p>Create instant UPI payment QR codes easily.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>WiFi QR Generator</h3>
+            <p>Generate WiFi QR codes for automatic network access.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>URL QR Codes</h3>
+            <p>Create QR codes for websites and landing pages.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>Text QR Codes</h3>
+            <p>Generate QR codes containing custom text messages.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>Email QR Codes</h3>
+            <p>Create QR codes that open email drafts instantly.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>Phone Call QR Codes</h3>
+            <p>Generate QR codes for direct phone dialing.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>Social Media QR Codes</h3>
+            <p>Create QR codes for Instagram, Facebook, YouTube and more.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>Built In QR Scanner</h3>
+            <p>Scan QR codes directly using your device camera.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>Print Ready Output</h3>
+            <p>Perfect for banners, flyers, business cards and packaging.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>No Registration Required</h3>
+            <p>Start generating QR codes without signing up.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>No Watermark</h3>
+            <p>Download clean QR codes without branding marks.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>Modern User Interface</h3>
+            <p>Clean and simple interface for easy use.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>Business Friendly</h3>
+            <p>Ideal for restaurants, shops, freelancers and startups.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>Event QR Support</h3>
+            <p>Create QR codes for tickets and registrations.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>Unlimited Scans</h3>
+            <p>Your generated QR codes can be scanned unlimited times.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>Dark Theme Compatible</h3>
+            <p>Designed to work smoothly with modern UI themes.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>Custom Size Control</h3>
+            <p>Adjust QR code size according to your needs.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>Instant Preview</h3>
+            <p>Preview your QR code before downloading.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>Error Correction Support</h3>
+            <p>Maintains scan quality even with minor distortions.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>Global Accessibility</h3>
+            <p>Accessible worldwide without region restrictions.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>SEO Optimized Structure</h3>
+            <p>Built using modern web standards for better visibility.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>Lightweight Performance</h3>
+            <p>Loads quickly even on slower internet connections.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>Marketing Ready</h3>
+            <p>Use QR codes for promotions and campaigns easily.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>Restaurant Menu QR</h3>
+            <p>Create digital menu QR codes for contactless service.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>Contact QR Codes</h3>
+            <p>Generate QR codes for sharing contact details instantly.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>Simple Navigation</h3>
+            <p>User friendly layout for smooth browsing experience.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>Quick Loading Speed</h3>
+            <p>Optimized resources ensure fast page loading.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>Secure HTTPS Ready</h3>
+            <p>Designed to work securely over HTTPS connections.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3>Future Ready Platform</h3>
+            <p>Built to support upcoming advanced QR features and upgrades.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ===== FAQ SECTION ===== -->
+    <section id="faq" class="section">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq-item">
+          <h3>What is a QR code?</h3>
+          <p>A QR code is a scannable barcode that stores information like URLs, text, WiFi details, or payment data.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Is QR Studio free to use?</h3>
+          <p>Yes, QR Studio allows you to generate unlimited QR codes completely free.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Do I need to create an account?</h3>
+          <p>No registration is required to generate QR codes.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Can I add a logo to my QR code?</h3>
+          <p>Yes, you can upload and place your logo in the center of your QR code.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Can I customize QR code colors?</h3>
+          <p>Yes, you can change foreground and background colors.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Do QR codes expire?</h3>
+          <p>Static QR codes do not expire and remain active permanently.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Can I create a WiFi QR code?</h3>
+          <p>Yes, you can generate a QR code for automatic WiFi connection.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Can I create a UPI payment QR code?</h3>
+          <p>Yes, you can generate UPI QR codes for instant payments.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Is my data stored?</h3>
+          <p>No, your data is not stored and QR codes are generated locally.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Can I download QR codes in high quality?</h3>
+          <p>Yes, QR codes are available in high-resolution format.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Are there any scan limits?</h3>
+          <p>No, your QR codes can be scanned unlimited times.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Does QR Studio work on mobile devices?</h3>
+          <p>Yes, it works smoothly on Android, iOS, tablets, and desktops.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Can QR codes be scanned from screens?</h3>
+          <p>Yes, they can be scanned from phone and computer screens.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>What types of QR codes can I create?</h3>
+          <p>You can generate QR codes for URL, text, email, phone, WiFi, UPI, and social links.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Is there any watermark?</h3>
+          <p>No watermark is added to downloaded QR codes.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Why is my QR code not scanning?</h3>
+          <p>Make sure the contrast is clear and the logo does not cover key areas.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Can businesses use QR Studio?</h3>
+          <p>Yes, it is ideal for businesses, restaurants, and marketing campaigns.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Can I generate social media QR codes?</h3>
+          <p>Yes, you can create QR codes for Instagram, Facebook, YouTube, and more.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Can I use QR codes for events?</h3>
+          <p>Yes, QR codes are perfect for event tickets and registrations.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>How long does it take to generate a QR code?</h3>
+          <p>QR codes are generated instantly within seconds.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Can I print my QR code?</h3>
+          <p>Yes, downloaded QR codes are suitable for high-quality printing.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Is QR Studio secure?</h3>
+          <p>Yes, QR generation happens securely inside your browser.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Can I generate email QR codes?</h3>
+          <p>Yes, you can create QR codes that open email drafts instantly.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Can I create phone call QR codes?</h3>
+          <p>Yes, QR codes can trigger direct phone dialing.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Is there a limit on QR creation?</h3>
+          <p>No, you can generate unlimited QR codes.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Can I customize QR size?</h3>
+          <p>Yes, you can adjust the size before downloading.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Does QR Studio support dark mode?</h3>
+          <p>Yes, the interface supports modern UI themes.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Can I use QR codes for marketing?</h3>
+          <p>Yes, QR codes are powerful tools for digital promotions.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Can I generate QR codes offline?</h3>
+          <p>QR generation works if the app is already loaded in your browser.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>What is error correction in QR codes?</h3>
+          <p>Error correction allows QR codes to scan even if slightly damaged.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Can I share contact details using QR codes?</h3>
+          <p>Yes, you can create QR codes for sharing contact information.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Is QR Studio suitable for restaurants?</h3>
+          <p>Yes, restaurants can create digital menu QR codes easily.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Can I generate QR codes for PDFs?</h3>
+          <p>Yes, upload your PDF online and generate a QR code linking to it.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Does QR Studio work globally?</h3>
+          <p>Yes, the platform is accessible worldwide.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Is QR Studio beginner friendly?</h3>
+          <p>Yes, the interface is simple and easy to use.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Do QR codes require internet to scan?</h3>
+          <p>Scanning may require internet depending on the content type.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Can I use QR codes on business cards?</h3>
+          <p>Yes, QR codes are perfect for business cards and branding.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>What makes QR Studio different?</h3>
+          <p>It offers free customization, logo support, and unlimited generation.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Is QR Studio future ready?</h3>
+          <p>Yes, it is designed to support upcoming advanced QR features.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Is QR Studio free?</h3>
+          <p>Yes, QR Studio is completely free to use with unlimited QR code generation.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Do you store my data?</h3>
+          <p>No. We do not store any QR code data. Everything runs in your browser.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Which QR types are supported?</h3>
+          <p>Text, URL, Email, Phone, SMS, WhatsApp, UPI, WiFi, vCard, Event, Location.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Can I download the QR code?</h3>
+          <p>Yes, you can download your QR code as PNG instantly using the download button.</p>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+  
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p><strong>QR Studio</strong> — Free Online QR Code Generator for instant, secure and unlimited QR creation worldwide.</p>
+      <p>Create custom QR codes for URL, WiFi, UPI, text, email and more without registration.</p>
+      <p>© 2026 QR Studio. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <!-- ===== JS FILES ===== -->
+  <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="js/qr-types.js"></script>
+  <script src="js/qr-engine.js"></script>
+  <script src="js/download.js"></script>
+  <script src="js/scanner.js"></script>
+  <script src="js/ui-controls.js"></script>
+  <script src="js/app.js"></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Is QR Studio free to use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, QR Studio is completely free and allows unlimited QR code generation."
+        }
+      }]
+    }
+  </script>
+</body>
+
+</html>
