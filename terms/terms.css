@@ -1,90 +1,153 @@
-body {
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f8f9fa;
-  color: #222;
-  line-height: 1.6;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #f1f5f9;
+  line-height: 1.7;
 }
 
 /* Navbar */
 .navbar {
   background: #111827;
-  padding: 15px 40px;
+  padding: 18px 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #1f2937;
 }
 
-.navbar .logo {
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+  color: #22d3ee;
 }
 
-.navbar nav a {
-  color: white;
+nav a {
+  color: #f1f5f9;
   text-decoration: none;
   margin-left: 20px;
-  font-size: 14px;
+  transition: 0.3s ease;
 }
 
-.navbar nav a:hover {
-  text-decoration: underline;
+nav a:hover {
+  color: #22d3ee;
 }
 
-/* Terms Section */
+/* Terms Container */
 .terms-container {
   max-width: 900px;
-  margin: 60px auto;
-  padding: 25px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  margin: 80px auto;
+  padding: 50px;
+  background: #1e293b;
+  border-radius: 16px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
 }
 
+/* Headings */
 .terms-container h1 {
-  margin-bottom: 5px;
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #22d3ee;
 }
 
 .last-update {
   font-size: 14px;
-  color: #555;
-  margin-bottom: 25px;
+  color: #94a3b8;
+  margin-bottom: 40px;
 }
 
 .terms-container h2 {
-  margin-top: 25px;
-  color: #111827;
+  margin-top: 35px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: #38bdf8;
 }
 
+/* Paragraphs */
+.terms-container p {
+  margin-bottom: 15px;
+  color: #cbd5e1;
+}
+
+/* Lists */
 .terms-container ul {
   margin-left: 20px;
+  margin-bottom: 20px;
 }
 
-/* Accept Button */
+.terms-container ul li {
+  margin-bottom: 8px;
+  color: #e2e8f0;
+}
+
+/* Links */
+.terms-container a {
+  color: #22d3ee;
+  text-decoration: none;
+}
+
+.terms-container a:hover {
+  text-decoration: underline;
+}
+
+/* Accept Box */
 .accept-box {
-  margin-top: 30px;
+  margin-top: 40px;
+  padding: 25px;
+  background: #0f172a;
+  border: 1px solid #1f2937;
+  border-radius: 12px;
+  text-align: center;
 }
 
 .accept-box button {
-  padding: 12px 25px;
-  background: #0f172a;
-  color: white;
+  padding: 12px 30px;
+  background: #22d3ee;
+  color: #0f172a;
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
+  font-weight: 600;
   cursor: pointer;
-  font-weight: bold;
+  transition: 0.3s ease;
 }
 
 .accept-box button:hover {
-  background: #1e40af;
+  background: #38bdf8;
+  transform: translateY(-2px);
 }
 
 /* Footer */
 .footer {
-  text-align: center;
-  padding: 20px;
   background: #111827;
-  color: white;
-  font-size: 14px;
+  padding: 25px 0;
+  text-align: center;
+  border-top: 1px solid #1f2937;
+  margin-top: 80px;
+  color: #94a3b8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
   }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  .terms-container {
+    margin: 40px 20px;
+    padding: 25px;
+  }
+
+  .terms-container h1 {
+    font-size: 28px;
+  }
+}
