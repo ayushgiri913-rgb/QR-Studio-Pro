@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+  color: #333;
+}
+
+/* Navbar */
+
+.navbar {
+  background: #111827;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Section */
+
+.contact-section {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-container {
+  background: white;
+  padding: 40px;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.contact-container h1 {
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* Form */
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #4f46e5;
+  outline: none;
+}
+
+/* Button */
+
+.btn {
+  display: inline-block;
+  background: #4f46e5;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #4338ca;
+}
+
+/* Thank You Page */
+
+.thankyou-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thankyou-box {
+  background: white;
+  padding: 50px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #111827;
+  color: white;
+  font-size: 14px;
+}
