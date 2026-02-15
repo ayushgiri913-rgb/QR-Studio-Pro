@@ -3,56 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <title>Contact Us | QR Studio Pro</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Contact QR Studio Pro for support, feedback, or business inquiries.">
-  <link rel="stylesheet" href="contact.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header class="navbar">
-  <div class="logo">QR Studio Pro</div>
-  <nav>
-    <a href="../">Home</a>
-    <a href="../about/">About</a>
-    <a href="../privacy/">Privacy</a>
-    <a href="../terms/">Terms</a>
-  </nav>
+  <div class="container">
+    <h1 class="logo">QR Studio Pro</h1>
+    <nav>
+      <a href="../">Home</a>
+      <a href="../about/">About</a>
+      <a href="../privacy/">Privacy Policy</a>
+      <a href="../terms/">Terms & Conditions</a>
+    </nav>
+  </div>
 </header>
 
 <section class="contact-section">
-  <div class="contact-container">
+  <div class="container">
 
-    <h1>Contact Us</h1>
-    <p class="subtitle">Have questions, suggestions, or partnership inquiries? Send us a message.</p>
+    <h2>Get in Touch</h2>
+    <p class="subtitle">
+      Have a question, suggestion, or business inquiry?  
+      We'd love to hear from you.
+    </p>
 
-    <form name="contact" method="POST" data-netlify="true" action="/contact/thank-you.html">
-      <input type="hidden" name="form-name" value="contact">
+    <div class="contact-card">
+      <h3>Email Us</h3>
+      <p>
+        Click the email below to contact us directly:
+      </p>
 
-      <div class="form-group">
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" required>
-      </div>
+      <a class="email-button" 
+         href="mailto:youremail@example.com?subject=QR%20Studio%20Pro%20Support%20Request">
+         📩 ayushgiri.ai.21@gmail.com
+      </a>
 
-      <div class="form-group">
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-
-      <div class="form-group">
-        <label for="message">Your Message</label>
-        <textarea id="message" name="message" rows="6" required></textarea>
-      </div>
-
-      <button type="submit" class="btn">Send Message</button>
-    </form>
+      <p class="note">
+        We typically respond within 24–48 hours.
+      </p>
+    </div>
 
   </div>
 </section>
 
 <footer class="footer">
-  <p>© 2026 QR Studio Pro. All Rights Reserved.</p>
+  <div class="container">
+    <p>© 2026 QR Studio Pro. All rights reserved.</p>
+  </div>
 </footer>
 
 </body>
-        </html>
+</html>
