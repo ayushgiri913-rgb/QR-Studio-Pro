@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Home Logo -->
+  <url>
+    <loc>https://yourwebsite.com/</loc>
+    <image:image>
+      <image:loc>https://yourwebsite.com/logo.png</image:loc>
+      <image:title>QR Studio Pro Logo</image:title>
+      <image:caption>Official QR Studio Pro Logo</image:caption>
+    </image:image>
+  </url>
+
+  <!-- OG Image Example -->
+  <url>
+    <loc>https://yourwebsite.com/blog/qr-business-tips/</loc>
+    <image:image>
+      <image:loc>https://yourwebsite.com/og-image.png</image:loc>
+      <image:title>QR Studio Pro QR Business Tips</image:title>
+      <image:caption>Social share image for blog</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://yourwebsite.com/blog/qr-marketing-strategies/</loc>
+    <image:image>
+      <image:loc>https://yourwebsite.com/og-image.png</image:loc>
+      <image:title>QR Studio Pro Marketing Strategies</image:title>
+      <image:caption>Social share image for blog</image:caption>
+    </image:image>
+  </url>
+
+</urlset>
