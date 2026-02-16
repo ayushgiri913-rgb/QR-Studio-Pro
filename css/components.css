@@ -1,1 +1,234 @@
+/* ===== GENERATOR CARD & SECTIONS ===== */
+.generator-card {
+    margin-top: 40px;
+    padding: 40px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 0 30px rgba(255,0,200,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.generator-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 40px rgba(255,0,200,0.3);
+}
+
+/* ===== FEATURE CARDS ===== */
+.feature-card {
+    padding: 25px;
+    border-radius: 16px;
+    text-align: center;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 0 25px rgba(255,0,200,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 35px rgba(255,0,200,0.25);
+}
+
+/* ===== BUTTONS ===== */
+.btn-primary,
+.btn-secondary,
+.btn-danger {
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #ff00cc, #3333ff);
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(255,0,200,0.6);
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    background: #00ffff;
+    color: black;
+}
+
+.btn-secondary:hover {
+    transform: scale(1.05);
+}
+
+.btn-danger {
+    background: #ff4444;
+    color: #ffffff;
+}
+
+.btn-danger:hover {
+    transform: scale(1.05);
+}
+
+/* ===== FORM GROUPS ===== */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: rgba(255,255,255,0.85);
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    background: rgba(255,255,255,0.08);
+    color: #ffffff;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus {
+    border: 2px solid #ff00cc;
+    box-shadow: 0 0 10px rgba(255,0,200,0.5);
+}
+
+/* ===== QR OUTPUT WRAPPER ===== */
+.qr-output-wrapper {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#qrPreview {
+    width: 280px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#qrPreview:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(255,0,200,0.3);
+}
+
+/* ===== CUSTOMIZATION PANEL ===== */
+.customization-panel {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+}
+
+.custom-group {
+    margin-bottom: 20px;
+}
+
+.custom-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: rgba(255,255,255,0.85);
+}
+
+.custom-group input,
+.custom-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: rgba(255,255,255,0.08);
+    color: #ffffff;
+}
+
+/* ===== SLIDER STYLING ===== */
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.1);
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #ff00cc;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255,0,200,0.6);
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #ff00cc;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255,0,200,0.6);
+}
+
+/* ===== TOOLTIP ===== */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: max-content;
+    background-color: #ff00cc;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 999;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .generator-card {
+        padding: 25px;
+    }
+
+    #qrPreview {
+        width: 220px;
+        height: 220px;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+  }
