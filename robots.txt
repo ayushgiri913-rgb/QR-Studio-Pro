@@ -6,5 +6,5 @@ Disallow: /admin/
 Disallow: /private/
 
 # Sitemap references
-Sitemap: https://yourwebsite.com/sitemap.xml
-Sitemap: https://yourwebsite.com/image-sitemap.xml
+Sitemap: https://qr-studio-flexible.netlify.app/sitemap.xml
+Sitemap: https://qr-studio-flexible.netlify.app/image-sitemap.xml
