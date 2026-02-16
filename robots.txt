@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://qr-studio-customizable.netlify.app/sitemap.xml
+# Block sensitive folders (if any)
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap references
+Sitemap: https://yourwebsite.com/sitemap.xml
+Sitemap: https://yourwebsite.com/image-sitemap.xml
