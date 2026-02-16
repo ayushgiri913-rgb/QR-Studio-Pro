@@ -1,40 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Home -->
   <url>
-    <loc>https://qr-studio-customizable.netlify.app/</loc>
-    <lastmod>2026-02-16</lastmod>
+    <loc>https://yourwebsite.com/</loc>
+    <lastmod>2026-02-16T18:00:00+05:30</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1.00</priority>
+    <priority>1.0</priority>
   </url>
 
+  <!-- About -->
   <url>
-    <loc>https://qr-studio-customizable.netlify.app/about/</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-
-  <url>
-    <loc>https://qr-studio-customizable.netlify.app/contact/</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-
-  <url>
-    <loc>https://qr-studio-customizable.netlify.app/privacy/</loc>
-    <lastmod>2026-02-16</lastmod>
+    <loc>https://yourwebsite.com/about/</loc>
+    <lastmod>2026-02-16T18:10:00+05:30</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://yourwebsite.com/contact/</loc>
+    <lastmod>2026-02-16T18:15:00+05:30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Privacy -->
+  <url>
+    <loc>https://yourwebsite.com/privacy/</loc>
+    <lastmod>2026-02-16T18:20:00+05:30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- Terms -->
+  <url>
+    <loc>https://yourwebsite.com/terms/</loc>
+    <lastmod>2026-02-16T18:25:00+05:30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- Blocks Hub -->
+  <url>
+    <loc>https://yourwebsite.com/blocks/</loc>
+    <lastmod>2026-02-16T18:30:00+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- QR Business -->
+  <url>
+    <loc>https://yourwebsite.com/qr-business/</loc>
+    <lastmod>2026-02-16T18:35:00+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- QR Marketing -->
+  <url>
+    <loc>https://yourwebsite.com/qr-marketing/</loc>
+    <lastmod>2026-02-16T18:40:00+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- QR Benefits -->
+  <url>
+    <loc>https://yourwebsite.com/qr-benefits/</loc>
+    <lastmod>2026-02-16T18:45:00+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- QR Guide -->
+  <url>
+    <loc>https://yourwebsite.com/qr-guide/</loc>
+    <lastmod>2026-02-16T18:50:00+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Blog Pages Example -->
+  <url>
+    <loc>https://yourwebsite.com/blog/qr-business-tips/</loc>
+    <lastmod>2026-02-16T19:00:00+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://qr-studio-customizable.netlify.app/terms/</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.60</priority>
+    <loc>https://yourwebsite.com/blog/qr-marketing-strategies/</loc>
+    <lastmod>2026-02-16T19:05:00+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>
