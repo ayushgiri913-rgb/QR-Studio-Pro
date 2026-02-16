@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+  text-align: center;
+}
+
+header {
+  padding: 20px;
+  background: #1e293b;
+}
+
+.home-btn, .back-btn {
+  margin: 10px;
+  padding: 8px 15px;
+  background: #38bdf8;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.content {
+  padding: 40px;
+}
+
+.more-topics {
+  padding: 30px;
+  background: #1e293b;
+}
+
+.topic {
+  margin: 15px;
+}
+
+.topic a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-size: 18px;
+}
