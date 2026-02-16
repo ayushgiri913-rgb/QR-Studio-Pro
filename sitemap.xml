@@ -1,11 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://free-qr-studio.netlify.app/</loc>
-    <lastmod>2026-02-14</lastmod>
+    <loc>https://qr-studio-customizable.netlify.app/</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://qr-studio-customizable.netlify.app/about/</loc>
+    <lastmod>2026-02-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://qr-studio-customizable.netlify.app/contact/</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://qr-studio-customizable.netlify.app/privacy/</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.60</priority>
+  </url>
+
+  <url>
+    <loc>https://qr-studio-customizable.netlify.app/terms/</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.60</priority>
   </url>
 
 </urlset>
