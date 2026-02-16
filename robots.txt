@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://free-qr-studio.netlify.app/sitemap.xml
+Sitemap: https://qr-studio-customizable.netlify.app/sitemap.xml
