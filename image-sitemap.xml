@@ -15,7 +15,7 @@
 
   <!-- OG Image Example -->
   <url>
-    <loc>https://yourwebsite.com/blog/qr-business-tips/</loc>
+    <loc>https://yourwebsite.com/block/qr-business/</loc>
     <image:image>
       <image:loc>https://yourwebsite.com/og-image.png</image:loc>
       <image:title>QR Studio Pro QR Business Tips</image:title>
@@ -24,7 +24,7 @@
   </url>
 
   <url>
-    <loc>https://yourwebsite.com/blog/qr-marketing-strategies/</loc>
+    <loc>https://yourwebsite.com/block/qr-marketing/</loc>
     <image:image>
       <image:loc>https://yourwebsite.com/og-image.png</image:loc>
       <image:title>QR Studio Pro Marketing Strategies</image:title>
