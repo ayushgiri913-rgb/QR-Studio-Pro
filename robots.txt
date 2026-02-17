@@ -1,10 +1,15 @@
 User-agent: *
 Allow: /
 
-# Block sensitive folders (if any)
-Disallow: /admin/
-Disallow: /private/
+# Important pages
+Allow: /sitemap.xml
+Allow: /image-sitemap.xml
 
-# Sitemap references
+# Block unnecessary files (optional security)
+Disallow: /_next/
+Disallow: /api/
+Disallow: /admin/
+
+# Sitemap location
 Sitemap: https://qr-studio-pro-jet.vercel.app/sitemap.xml
 Sitemap: https://qr-studio-pro-jet.vercel.app/image-sitemap.xml
