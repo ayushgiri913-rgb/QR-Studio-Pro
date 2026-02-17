@@ -5,9 +5,9 @@
 
   <!-- Home Logo -->
   <url>
-    <loc>https://qr-studio-flexible.netlify.app/</loc>
+    <loc>https://qr-studio-pro-jet.vercel.app/</loc>
     <image:image>
-      <image:loc>https://qr-studio-flexible.netlify.app/logo.png</image:loc>
+      <image:loc>https://qr-studio-pro-jet.vercel.app/logo.png</image:loc>
       <image:title>QR Studio Pro Logo</image:title>
       <image:caption>Official QR Studio Pro Logo</image:caption>
     </image:image>
@@ -15,18 +15,18 @@
 
   <!-- OG Image Example -->
   <url>
-    <loc>https://qr-studio-flexible.netlify.app/qr-business/</loc>
+    <loc>https://qr-studio-pro-jet.vercel.app/qr-business/</loc>
     <image:image>
-      <image:loc>https://qr-studio-flexible.netlify.app/og-image.png</image:loc>
+      <image:loc>https://qr-studio-pro-jet.vercel.app/og-image.png</image:loc>
       <image:title>QR Studio Pro QR Business Tips</image:title>
       <image:caption>Social share image for blog</image:caption>
     </image:image>
   </url>
 
   <url>
-    <loc>https://qr-studio-flexible.netlify.app/block/qr-marketing/</loc>
+    <loc>https://qr-studio-pro-jet.vercel.app/qr-marketing/</loc>
     <image:image>
-      <image:loc>https://qr-studio-flexible.netlify.app/og-image.png</image:loc>
+      <image:loc>https://qr-studio-pro-jet.vercel.app/og-image.png</image:loc>
       <image:title>QR Studio Pro Marketing Strategies</image:title>
       <image:caption>Social share image for blog</image:caption>
     </image:image>
