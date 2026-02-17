@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset 
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-  <!-- Home Logo -->
   <url>
     <loc>https://qr-studio-pro-jet.vercel.app/</loc>
     <image:image>
@@ -13,13 +13,12 @@
     </image:image>
   </url>
 
-  <!-- OG Image Example -->
   <url>
     <loc>https://qr-studio-pro-jet.vercel.app/qr-business/</loc>
     <image:image>
       <image:loc>https://qr-studio-pro-jet.vercel.app/og-image.png</image:loc>
-      <image:title>QR Studio Pro QR Business Tips</image:title>
-      <image:caption>Social share image for blog</image:caption>
+      <image:title>QR Business Tips</image:title>
+      <image:caption>Business QR Guide Image</image:caption>
     </image:image>
   </url>
 
@@ -27,8 +26,8 @@
     <loc>https://qr-studio-pro-jet.vercel.app/qr-marketing/</loc>
     <image:image>
       <image:loc>https://qr-studio-pro-jet.vercel.app/og-image.png</image:loc>
-      <image:title>QR Studio Pro Marketing Strategies</image:title>
-      <image:caption>Social share image for blog</image:caption>
+      <image:title>QR Marketing Strategies</image:title>
+      <image:caption>Marketing QR Guide Image</image:caption>
     </image:image>
   </url>
 
